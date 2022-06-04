@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;600;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="../image/icons/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/scss.css" />
+    <title>تفاصيل المنتج</title>
+</head>
+<body>
+    <header>
+        <nav class="nav ">
+            <div class="row">
+                <div class="col-md-1 col-sm-2">
+                    <a href="../index.html" class="logo">
+                        <img src="../image/noon-black-ar.svg" draggable="false" alt="logo" />
+                    </a>
+                </div>
+                <div class="col-md-8 col-sm-7 search-input">
+                    <input type="text" width="100%" placeholder="عن ماذا تبحث ؟">
+                </div>
+                <div class="col-md-3 col-sm-3 d-flex justify-content-center">
+                    <div class="login">
+                        <a href="./login.html">
+                            <span>تسجيل الدخول</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="cart.html">
+                            <span>عربه التسوق</span>
+                            <img src="../image/icons/cart.svg" draggable="false" alt="cart">
+                            <span class="number">2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="sec-nav">
+            <div class="all-categories">
+                <span style="cursor: text"> جميع الفئات</span>
+            </div>
+            <ul class="menu">
+                <li class="menu-electronics">
+                    <a href="#">الإلكترونيات</a>
+                    <div class="electronics item">
+                        <div class="row" style="margin: 0">
+                            <div class="col-lg-2 categories">
+                                <p>الفئات</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">تلفزيونات</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">أجهزة الكمبيوتر المحمولة</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">كاميرات</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">أجهزة الصوت</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">مستلزمات الكمبيوتر</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 best-trend">
+                                <p>أفضل الماركات</p>
+                                <div>
+                                    <a href="#">
+                                        <img src="../image/samsung-logo.png" draggable="false" alt="سامسونج">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/lg.png" draggable="false" alt="ال جي">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/ata.png" draggable="false" alt="أى تى أى"></a>
+                                    <a href="#">
+                                        <img src="../image/dell.png" draggable="false" alt="ديل">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/lenovo.png" draggable="false" alt="لينوفو">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/hp.png" draggable="false" alt="اتش بي">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/apple.png" draggable="false" alt="أبل">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/kingstone.png" draggable="false" alt="كينج استون">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/sony.png" draggable="false" alt="سونى">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex banners">
+                                <img src="../image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
+                                <img src="../image/top-electronics_02.png" draggable="false" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-mobiles">
+                    <a href="#">موبيلات</a>
+                    <div class="mobiles item">
+                        <div class="row" style="margin: 0">
+                            <div class="col-lg-2 categories">
+                                <p>الفئات</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">موبيلات مميزة</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">أجهزة تابلت</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">موبيلات بسعر مناسب</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ساعات ذكيه</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">إكسسوارات الموبايل</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 best-trend">
+                                <p>أفضل الماركات</p>
+                                <div>
+                                    <a href="#">
+                                        <img src="../image/samsung-logo.png" draggable="false" alt="سامسونج">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/apple.png" draggable="false" alt="أبل">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/kingstone.png" draggable="false" alt="كينج استون">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/sony.png" draggable="false" alt="سونى">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/lg.png" draggable="false" alt="ال جي">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/ata.png" draggable="false" alt="أى تى أى"></a>
+                                    <a href="#">
+                                        <img src="../image/dell.png" draggable="false" alt="ديل">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/lenovo.png" draggable="false" alt="لينوفو">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/hp.png" draggable="false" alt="اتش بي">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex banners">
+                                <img src="../image/top-electronics_02.png" draggable="false" alt="">
+                                <img src="../image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-clothes">
+                    <a href="#">الأزياء</a>
+                    <div class="clothes item">
+                        <div class="row" style="margin: 0">
+                            <div class="col-lg-2 categories">
+                                <p>الفئات</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">تلفزيونات</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">أجهزة الكمبيوتر المحمولة</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">كاميرات</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">أجهزة الصوت</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">مستلزمات الكمبيوتر</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 best-trend">
+                                <p>أفضل الماركات</p>
+                                <div>
+                                    <a href="#">
+                                        <img src="../image/samsung-logo.png" alt="سامسونج">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/lg.png" alt="ال جي">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/ata.png" alt="أى تى أى"></a>
+                                    <a href="#">
+                                        <img src="../image/dell.png" alt="ديل">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/lenovo.png" alt="لينوفو">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/hp.png" alt="اتش بي">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/apple.png" alt="أبل">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/kingstone.png" alt="كينج استون">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../image/sony.png" alt="سونى">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex banners">
+                                <img src="../image/top-electronics_01.png.fdmdownload" alt="">
+                                <img src="../image/top-electronics_02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="offers">
+                    <a href="#">العروض</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="information m-4">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                    <img src="../image/product-1-1.jpg" width="100px" alt="صورة منتج">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                                    <img src="../image/product-2-2.jpg" width="100px" alt="صورة منتج">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                                    <img src="../image/product-3-3.jpg" width="100px" alt="صورة منتج">
+                                </button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../image/product-1-1.jpg" class="d-block w-100" alt="صورة منتج">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../image/product-2-2.jpg" class="d-block w-100" alt="صورة منتج">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../image/product-3-3.jpg" class="d-block w-100" alt="صورة منتج">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 details">
+                        <h6 class="brand">أبل</h6>
+                        <p class="product-name">
+                            ساعة ووتش سيريز بنظام تحديد المواقع بغطاء من الألومنيوم وسوار رياضي رمادي سبيس مقاس 6-44 مم أسود
+                        </p>
+                        <div class="model-number">
+                            <span>رقم الموديل : </span>
+                            <span>M00H3</span>
+                        </div>
+                        <div class="before">
+                            <span> قبل : </span>
+                            <span>9999 <small>جنيه</small></span>
+                        </div>
+                        <div class="after">
+                            <span> الأن : </span>
+                            <span>8899 <small>جنيه</small></span>
+                            <span>شاملاً ضريبة القيمة المضافة</span>
+                        </div>
+                        <div class="discount">
+                            <span> وفرت : </span>
+                            <span>1100 <small>جنيه</small></span>
+                            <span>خصم 11%</span>
+                        </div>
+                        <a href="#">
+                            <img src="../image/product-page-banner.gif" alt="تقسيط">
+                        </a>
+                        <div class="quantity">
+                            <span> الكمية : </span>
+                            <button onclick="increase()" class="increase">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                            </button>
+                            <p class="qnt" id="quantity">1</p>
+                            <button onclick="decrease()" class="decrease">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="color">
+                            <p>اللون:</p>
+                            <div>
+                                <label>
+                                    <input type="radio" name="color" value="white" checked />
+                                </label>
+                                <label>
+                                    <input type="radio" name="color" value="red" />
+                                </label>
+                                <label>
+                                    <input type="radio" name="color" value="black" />
+                                </label>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            إضافة إلى عربة التسوق
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 non-important">
+                <div class="free_returns">
+                    <img src="../image/icons/free_returns.svg" alt="تقدر ترجّع المنتج بسهولة في العرض ده">
+                    <span>تقدر ترجّع المنتج بسهولة في العرض ده</span>
+                </div>
+                <div class="warranty">
+                    <img src="../image/icons/warranty.svg" alt="بدون ضمان">
+                    <span>بدون ضمان</span>
+                </div>
+                <div class="seller">
+                    <img src="../image/icons/seller.svg" alt="البائع">
+                    <span>
+                        البائع
+                        <a href="#">نون
+                            <div class="line"></div>
+                        </a>
+
+                    </span>
+                </div>
+                <div class="free_returns_usp">
+                    <div class="free_returns_usp_icon">
+                        <img src="../image/icons/free_returns_usp.svg" alt="free_returns_usp">
+                    </div>
+                    <div class="free_returns_usp_text">
+                        <p>إرجاع مجاني</p>
+                        <span>على منتجات معينة ومجاناً</span>
+                    </div>
+                </div>
+                <div class="trusted_shipping_usp">
+                    <div class="trusted_shipping_usp_icon">
+                        <img src="../image/icons/trusted_shipping_usp_v2.svg" alt="free_returns_usp">
+                    </div>
+                    <div class="trusted_shipping_usp_text">
+                        <p>شحن موثوق به</p>
+                        <span>بدون مصاريف شحن لما تشتري بـ 350 جنيه أو أكترً</span>
+                    </div>
+                </div>
+                <div class="secure_usp">
+                    <div class="secure_usp_icon">
+                        <img src="../image/icons/secure_usp.svg" alt="secure_usp">
+                    </div>
+                    <div class="secure_usp_text">
+                        <p>تسوق آمن</p>
+                        <span>بياناتك محمية دائماًً</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-information m-4">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab"
+                        data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">
+                    نظرة عامة
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab"
+                        data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    المواصفات
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab"
+                        data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">
+                    التقييم
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane general-look fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <h6>الميزات الأساسية</h6>
+                <ul>
+                    <li>تقيس مستوى الأكسجين في الدم باستخدام جهاز استشعار وتطبيق جديدين متطورين</li>
+                    <li>تصميم يتيح للشخص القيام بتخطيط كهربي للقلب في أي وقت وأي مكان</li>
+                    <li>ألقِ نظرة سريعة على معايير اللياقة البدنية من خلال شاشة ريتينا المحسّنة دائمة التشغيل</li>
+                    <li>أقطاب كهربائية مدمجة في التاج الرقمي والغطاء الخلفي الكريستالي تعمل معاً لقراءة إشارات القلب</li>
+                    <li>تطبيق جديد للنوم يساعدك على وضع روتين منتظم لوقت النوم وتتبع نومك</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade mwasfat" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h6>المواصفات</h6>
+                <div class="d-flex">
+                    <div class="right">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>توافق الماركة</td>
+                                <td>Apple</td>
+                            </tr>
+                            <tr>
+                                <td>اسم اللون</td>
+                                <td>أبيض</td>
+                            </tr>
+                            <tr>
+                                <td>نوع التوصيل</td>
+                                <td>Gps</td>
+                            </tr>
+                            <tr>
+                                <td>بلد المنشأ</td>
+                                <td>الصين</td>
+                            </tr>
+                            <tr>
+                                <td>الفيديو</td>
+                                <td>قابل للشحن</td>
+                            </tr>
+                            <tr>
+                                <td>الميزة 1</td>
+                                <td>حجم صغير</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="left">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>الميزة 3</td>
+                                <td>قابل للبرمجة</td>
+                            </tr>
+                            <tr>
+                                <td>الدرجة</td>
+                                <td>جديد</td>
+                            </tr>
+                            <tr>
+                                <td>رقم الموديل</td>
+                                <td>M00D3</td>
+                            </tr>
+                            <tr>
+                                <td>وزن المنتج</td>
+                                <td>36.5 غم</td>
+                            </tr>
+                            <tr>
+                                <td>الحجم</td>
+                                <td>44</td>
+                            </tr>
+                            <tr>
+                                <td>محتويات العلبة</td>
+                                <td>Case, Band, 1m Magnetic Charging Cable</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="rating">
+                    <div class="right">
+                        <h4 class="total-rate">التقييم العام</h4>
+                        <h4 class="rate-num">4.9</h4>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                        </div>
+                        <span>بناءً على 22 تقييمات</span>
+                    </div>
+                    <div class="left">
+                        <div class="star-5 all-rating">
+                            <span>5</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <div class="progress">
+                                <span class="rate-progress"></span>
+                            </div>
+                            <span style="margin-right: 5px">(20)</span>
+                        </div>
+                        <div class="star-4 all-rating">
+                            <span>4</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <div class="progress">
+                                <span class="rate-progress"></span>
+                            </div>
+                            <span style="margin-right: 5px">(2)</span>
+                        </div>
+                        <div class="star-3 all-rating">
+                            <span>3</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <div class="progress">
+                                <span class="rate-progress"></span>
+                            </div>
+                            <span style="margin-right: 5px">(0)</span>
+                        </div>
+                        <div class="star-2 all-rating">
+                            <span>2</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <div class="progress">
+                                <span class="rate-progress"></span>
+                            </div>
+                            <span style="margin-right: 5px">(0)</span>
+                        </div>
+                        <div class="star-1 all-rating">
+                            <span>1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <div class="progress">
+                                <span class="rate-progress"></span>
+                            </div>
+                            <span style="margin-right: 5px">(0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="best-offers my-4">
+        <div class="container">
+            <div class="head d-flex justify-content-between">
+                <h4 class="hover ">الناس شافوا المنتجات دي كمان</h4>
+            </div>
+            <div class="row pb-4 pt-2">
+                <div class="col-lg-2 item-offer">
+                    <a href="#">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="../image/lab1.jpg"
+                                     title="لابتوب آيديا باد 3 15ADA05 مزود بشاشة مقاس 15.6 بوصة ومعالج رايزين 3 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص SSD سعة 512 جيجابايت وبطاقة رسومات إيه إم دي راديون مدمجة ونظام تشغيل ويندوز 10 أسود  "
+                                     alt="لابتوب آيديا باد 3 15ADA05 مزود بشاشة مقاس 15.6 بوصة ومعالج رايزين 3 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص SSD سعة 512 جيجابايت وبطاقة رسومات إيه إم دي راديون مدمجة ونظام تشغيل ويندوز 10 أسود  ">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-name">
+                                    لابتوب آيديا باد 3 15ADA05 مزود بشاشة مقاس 15.6 بوصة ومعالج رايزين 3 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص SSD سعة 512 جيجابايت وبطاقة رسومات إيه إم دي راديون مدمجة ونظام تشغيل ويندوز 10 أسود
+                                </p>
+                                <p class="product-price">
+                                    6999.00 <small>جنيه</small>
+                                </p>
+                                <p class="old-price">
+                                </p>
+                                <div class="express">
+                                    <img src="../image/express-ar.png" alt="اكسبريس">
+                                    <div class="rating">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            6.2
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 item-offer">
+                    <a href="#">
+                        <div class="product">
+                            <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
+                            <div class="product-image">
+                                <img src="../image/phone1.jpg"
+                                     title="هاتف جالاكسي M51 ثنائي الشريحة بذاكرة رام سعة 8 جيجابايت وسعة تخزين 128 جيجابايت يدعم تقنية 4G LTE بلون أسود سماوي "
+                                     alt="هاتف جالاكسي M51 ثنائي الشريحة بذاكرة رام سعة 8 جيجابايت وسعة تخزين 128 جيجابايت يدعم تقنية 4G LTE بلون أسود سماوي ">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-name">
+                                    هاتف جالاكسي M51 ثنائي الشريحة بذاكرة رام سعة 8 جيجابايت وسعة تخزين 128 جيجابايت يدعم تقنية 4G LTE بلون أسود سماوي
+                                </p>
+                                <p class="product-price">
+                                    5500.00 <small>جنيه</small>
+                                </p>
+                                <p class="old-price">
+                                    6000 <small>جنيه</small>
+                                </p>
+                                <div class="express">
+                                    <img src="../image/express-ar.png" alt="اكسبريس">
+                                    <div class="rating">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            5.0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 item-offer">
+                    <a href="#">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="../image/lab2.jpg"
+                                     title="لابتوب ماك بوك آير بشاشة ريتينا مقاس 13.3 بوصة ومعالج كور i3 من الجيل العاشر مع نظام تشغيل ماك وذاكرة رام سعة 8 جيجابايت ومحرك أقراص SSD سعة 256 جيجابايت وبطاقة رسومات إنتل آيريس بلس ولوحة مفاتيح باللغتين الإنجليزية والعربية - إصدار عام 2020 طراز MWTL2AB/A ذهبي "
+                                     alt="لابتوب ماك بوك آير بشاشة ريتينا مقاس 13.3 بوصة ومعالج كور i3 من الجيل العاشر مع نظام تشغيل ماك وذاكرة رام سعة 8 جيجابايت ومحرك أقراص SSD سعة 256 جيجابايت وبطاقة رسومات إنتل آيريس بلس ولوحة مفاتيح باللغتين الإنجليزية والعربية - إصدار عام 2020 طراز MWTL2AB/A ذهبي ">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-name">
+                                    لابتوب ماك بوك آير بشاشة ريتينا مقاس 13.3 بوصة ومعالج كور i3 من الجيل العاشر مع نظام تشغيل ماك وذاكرة رام سعة 8 جيجابايت ومحرك أقراص SSD سعة 256 جيجابايت وبطاقة رسومات إنتل آيريس بلس ولوحة مفاتيح باللغتين الإنجليزية والعربية - إصدار عام 2020 طراز MWTL2AB/A ذهبي
+                                </p>
+                                <p class="product-price">
+                                    18300.00 <small>جنيه</small>
+                                </p>
+                                <p class="old-price">
+                                    25000 <small>جنيه</small>
+                                </p>
+                                <div class="express">
+                                    <img src="../image/express-ar.png" alt="اكسبريس">
+                                    <div class="rating">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            5.0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 item-offer">
+                    <a href="#">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="../image/lab1.jpg"
+                                     title="لابتوب آيديا باد 3 15ADA05 مزود بشاشة مقاس 15.6 بوصة ومعالج رايزين 3 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص SSD سعة 512 جيجابايت وبطاقة رسومات إيه إم دي راديون مدمجة ونظام تشغيل ويندوز 10 أسود  "
+                                     alt="لابتوب آيديا باد 3 15ADA05 مزود بشاشة مقاس 15.6 بوصة ومعالج رايزين 3 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص SSD سعة 512 جيجابايت وبطاقة رسومات إيه إم دي راديون مدمجة ونظام تشغيل ويندوز 10 أسود  ">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-name">
+                                    لابتوب آيديا باد 3 15ADA05 مزود بشاشة مقاس 15.6 بوصة ومعالج رايزين 3 وذاكرة رام سعة 4 جيجابايت ومحرك أقراص SSD سعة 512 جيجابايت وبطاقة رسومات إيه إم دي راديون مدمجة ونظام تشغيل ويندوز 10 أسود
+                                </p>
+                                <p class="product-price">
+                                    6999.00 <small>جنيه</small>
+                                </p>
+                                <p class="old-price">
+                                </p>
+                                <div class="express">
+                                    <img src="../image/express-ar.png" alt="اكسبريس">
+                                    <div class="rating">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            6.2
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 item-offer">
+                    <a href="#">
+                        <div class="product">
+                            <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
+                            <div class="product-image">
+                                <img src="../image/phone1.jpg"
+                                     title="هاتف جالاكسي M51 ثنائي الشريحة بذاكرة رام سعة 8 جيجابايت وسعة تخزين 128 جيجابايت يدعم تقنية 4G LTE بلون أسود سماوي "
+                                     alt="هاتف جالاكسي M51 ثنائي الشريحة بذاكرة رام سعة 8 جيجابايت وسعة تخزين 128 جيجابايت يدعم تقنية 4G LTE بلون أسود سماوي ">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-name">
+                                    هاتف جالاكسي M51 ثنائي الشريحة بذاكرة رام سعة 8 جيجابايت وسعة تخزين 128 جيجابايت يدعم تقنية 4G LTE بلون أسود سماوي
+                                </p>
+                                <p class="product-price">
+                                    5500.00 <small>جنيه</small>
+                                </p>
+                                <p class="old-price">
+                                    6000 <small>جنيه</small>
+                                </p>
+                                <div class="express">
+                                    <img src="../image/express-ar.png" alt="اكسبريس">
+                                    <div class="rating">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            5.0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 item-offer">
+                    <a href="#">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="../image/lab2.jpg"
+                                     title="لابتوب ماك بوك آير بشاشة ريتينا مقاس 13.3 بوصة ومعالج كور i3 من الجيل العاشر مع نظام تشغيل ماك وذاكرة رام سعة 8 جيجابايت ومحرك أقراص SSD سعة 256 جيجابايت وبطاقة رسومات إنتل آيريس بلس ولوحة مفاتيح باللغتين الإنجليزية والعربية - إصدار عام 2020 طراز MWTL2AB/A ذهبي "
+                                     alt="لابتوب ماك بوك آير بشاشة ريتينا مقاس 13.3 بوصة ومعالج كور i3 من الجيل العاشر مع نظام تشغيل ماك وذاكرة رام سعة 8 جيجابايت ومحرك أقراص SSD سعة 256 جيجابايت وبطاقة رسومات إنتل آيريس بلس ولوحة مفاتيح باللغتين الإنجليزية والعربية - إصدار عام 2020 طراز MWTL2AB/A ذهبي ">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-name">
+                                    لابتوب ماك بوك آير بشاشة ريتينا مقاس 13.3 بوصة ومعالج كور i3 من الجيل العاشر مع نظام تشغيل ماك وذاكرة رام سعة 8 جيجابايت ومحرك أقراص SSD سعة 256 جيجابايت وبطاقة رسومات إنتل آيريس بلس ولوحة مفاتيح باللغتين الإنجليزية والعربية - إصدار عام 2020 طراز MWTL2AB/A ذهبي
+                                </p>
+                                <p class="product-price">
+                                    18300.00 <small>جنيه</small>
+                                </p>
+                                <p class="old-price">
+                                    25000 <small>جنيه</small>
+                                </p>
+                                <div class="express">
+                                    <img src="../image/express-ar.png" alt="اكسبريس">
+                                    <div class="rating">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                            5.0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="footer-one">
+            <div class="right">
+                <p class="abc">نحن دائماً جاهزون لمساعدتك</p>
+                <p class="xyz">تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
+            </div>
+            <div class="left">
+                <a href="#">
+                    <div class="alert">
+                        <div class="alert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                            </svg>
+                        </div>
+                        <div class="alert-text">
+                            <span>مركز المساعدة</span>
+                            <p>help.noon.com</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="email">
+                        <div class="email-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                            </svg>
+                        </div>
+                        <div class="email-text">
+                            <span>الدعم عبر البريد الإلكتروني</span>
+                            <p>egypt@noon.com</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="d3m">
+                        <div class="d3m-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                        </div>
+                        <div class="d3m-text">
+                            <span>الدعم عبر الهاتف</span>
+                            <p>16358</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyRight">
+            <div class="right">
+                <p>&copy; جميع الحقوق محفوظه لدى شركه نون .</p>
+                <p>تصميم بواسطه <a href="#" class="developer">محمد أسامة</a></p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li>
+                        <a href="#">سياسه الضمان</a>
+                    </li>
+                    <li>
+                        <a href="#">شروط الإستخدام</a>
+                    </li>
+                    <li>
+                        <a href="#">شروط البيع</a>
+                    </li>
+                    <li>
+                        <a href="#">سياسه الخصوصيه</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+            integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+            integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/js.js"></script>
+
+</body>
+</html>
