@@ -15,37 +15,38 @@
 </head>
 <body>
     <header>
-    <nav class="nav ">
-        <div class="row">
-            <div class="col-md-1">
-                <a href="../index.html" class="logo">
-                    <img src="../image/noon-black-ar.svg" draggable="false" alt="logo" />
-                </a>
-            </div>
-            <div class="col-md-8 search-input">
-                <input type="text" width="100%" placeholder="عن ماذا تبحث ؟">
-            </div>
-            <div class="col-md-3 d-flex justify-content-center">
-                <div class="login">
-                    <a href="./login.html">
-                        <span>تسجيل الدخول</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                        </svg>
+        <nav class="nav ">
+            <div class="row">
+                <div class="col-md-1 col-sm-2 logo-noon">
+                    <a href="../index.html" class="logo">
+                        <img src="../image/noon-black-ar.svg" draggable="false" alt="logo" />
                     </a>
                 </div>
-                <div class="shopping-cart">
-                    <a href="cart.html">
-                        <span>عربه التسوق</span>
-                        <img src="../image/icons/cart.svg" draggable="false" alt="cart">
-                        <span class="number">1</span>
-                    </a>
+                <div class="col-md-8 col-sm-7 search-input">
+                    <input type="text" width="100%" placeholder="عن ماذا تبحث ؟">
+                </div>
+                <div class="col-md-3 col-sm-3 icons d-flex justify-content-center">
+                    <div class="login">
+                        <a href="login.html">
+                            <span>تسجيل الدخول</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="cart.html">
+                            <span>عربه التسوق</span>
+                            <img src="../image/icons/cart.svg" draggable="false" alt="cart">
+                            <span class="number">2</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav> 
+    </header>
     <div class="sec-nav">
-        <div class="all-categories">
+        <div class="all-categories mob-none">
             <span style="cursor: text"> جميع الفئات</span>
         </div>
         <ul class="menu">
@@ -73,7 +74,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 best-trend">
+                        <div class="col-lg-4 best-trend mob-none">
                             <p>أفضل الماركات</p>
                             <div>
                                 <a href="#">
@@ -104,7 +105,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-flex banners">
+                        <div class="col-lg-6 mob-none banners">
                             <img src="../image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
                             <img src="../image/top-electronics_02.png" draggable="false" alt="">
                         </div>
@@ -135,7 +136,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 best-trend">
+                        <div class="col-lg-4 mob-none best-trend">
                             <p>أفضل الماركات</p>
                             <div>
                                 <a href="#">
@@ -166,7 +167,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-flex banners">
+                        <div class="col-lg-6 mob-none banners">
                             <img src="../image/top-electronics_02.png" draggable="false" alt="">
                             <img src="../image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
                         </div>
@@ -197,7 +198,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 best-trend">
+                        <div class="col-lg-4 best-trend mob-none">
                             <p>أفضل الماركات</p>
                             <div>
                                 <a href="#">
@@ -228,7 +229,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-flex banners">
+                        <div class="col-lg-6 banners mob-none">
                             <img src="../image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
                             <img src="../image/top-electronics_02.png" draggable="false" alt="">
                         </div>
@@ -240,7 +241,6 @@
             </li>
         </ul>
     </div>
-</header>
 
     <div class="cart-page">
         <div class="container">

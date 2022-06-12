@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/allStyles/header.css" />
     <link rel="stylesheet" href="style/scss.css" />
     <title>نون دوت كوم</title>
 </head>
@@ -17,7 +18,7 @@
     <header>
         <nav class="nav ">
             <div class="row">
-                <div class="col-md-1 col-sm-2">
+                <div class="col-md-1 col-sm-2 logo-noon">
                     <a href="index.html" class="logo">
                         <img src="image/noon-black-ar.svg" draggable="false" alt="logo" />
                     </a>
@@ -25,7 +26,7 @@
                 <div class="col-md-8 col-sm-7 search-input">
                     <input type="text" width="100%" placeholder="عن ماذا تبحث ؟">
                 </div>
-                <div class="col-md-3 col-sm-3 d-flex justify-content-center">
+                <div class="col-md-3 col-sm-3 icons d-flex justify-content-center">
                     <div class="login">
                         <a href="./pages/login.html">
                             <span>تسجيل الدخول</span>
@@ -43,205 +44,204 @@
                     </div>
                 </div>
             </div>
-        </nav>
-        <div class="sec-nav">
-            <div class="all-categories">
-                <span style="cursor: text"> جميع الفئات</span>
-            </div>
-            <ul class="menu">
-                <li class="menu-electronics">
-                    <a href="#">الإلكترونيات</a>
-                    <div class="electronics item">
-                        <div class="row" style="margin: 0">
-                            <div class="col-lg-2 categories">
-                                <p>الفئات</p>
-                                <ul>
-                                    <li>
-                                        <a href="#">تلفزيونات</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">أجهزة الكمبيوتر المحمولة</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">كاميرات</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">أجهزة الصوت</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">مستلزمات الكمبيوتر</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 best-trend">
-                                <p>أفضل الماركات</p>
-                                <div>
-                                    <a href="#">
-                                        <img src="image/samsung-logo.png" draggable="false" alt="سامسونج">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/lg.png" draggable="false" alt="ال جي">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/ata.png" draggable="false" alt="أى تى أى"></a>
-                                    <a href="#">
-                                        <img src="image/dell.png" draggable="false" alt="ديل">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/lenovo.png" draggable="false" alt="لينوفو">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/hp.png" draggable="false" alt="اتش بي">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/apple.png" draggable="false" alt="أبل">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/kingstone.png" draggable="false" alt="كينج استون">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/sony.png" draggable="false" alt="سونى">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 d-flex banners">
-                                <img src="image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
-                                <img src="image/top-electronics_02.png" draggable="false" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-mobiles">
-                    <a href="#">موبيلات</a>
-                    <div class="mobiles item">
-                        <div class="row" style="margin: 0">
-                            <div class="col-lg-2 categories">
-                                <p>الفئات</p>
-                                <ul>
-                                    <li>
-                                        <a href="#">موبيلات مميزة</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">أجهزة تابلت</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">موبيلات بسعر مناسب</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">ساعات ذكيه</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">إكسسوارات الموبايل</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 best-trend">
-                                <p>أفضل الماركات</p>
-                                <div>
-                                    <a href="#">
-                                        <img src="image/samsung-logo.png" draggable="false" alt="سامسونج">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/apple.png" draggable="false" alt="أبل">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/kingstone.png" draggable="false" alt="كينج استون">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/sony.png" draggable="false" alt="سونى">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/lg.png" draggable="false" alt="ال جي">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/ata.png" draggable="false" alt="أى تى أى"></a>
-                                    <a href="#">
-                                        <img src="image/dell.png" draggable="false" alt="ديل">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/lenovo.png" draggable="false" alt="لينوفو">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/hp.png" draggable="false" alt="اتش بي">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 d-flex banners">
-                                <img src="image/top-electronics_02.png" draggable="false" alt="">
-                                <img src="image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-clothes">
-                    <a href="#">الأزياء</a>
-                    <div class="clothes item">
-                        <div class="row" style="margin: 0">
-                            <div class="col-lg-2 categories">
-                                <p>الفئات</p>
-                                <ul>
-                                    <li>
-                                        <a href="#">تلفزيونات</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">أجهزة الكمبيوتر المحمولة</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">كاميرات</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">أجهزة الصوت</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">مستلزمات الكمبيوتر</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 best-trend">
-                                <p>أفضل الماركات</p>
-                                <div>
-                                    <a href="#">
-                                        <img src="image/samsung-logo.png" draggable="false" alt="سامسونج">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/lg.png" draggable="false" alt="ال جي">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/ata.png" draggable="false" alt="أى تى أى"></a>
-                                    <a href="#">
-                                        <img src="image/dell.png" draggable="false" alt="ديل">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/lenovo.png" draggable="false" alt="لينوفو">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/hp.png" draggable="false" alt="اتش بي">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/apple.png" draggable="false" alt="أبل">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/kingstone.png" draggable="false" alt="كينج استون">
-                                    </a>
-                                    <a href="#">
-                                        <img src="image/sony.png" draggable="false" alt="سونى">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 d-flex banners">
-                                <img src="image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
-                                <img src="image/top-electronics_02.png" draggable="false" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="offers">
-                    <a href="#">العروض</a>
-                </li>
-            </ul>
-        </div>
+        </nav> 
     </header>
-
+    <div class="sec-nav">
+        <div class="all-categories mob-none">
+            <span style="cursor: text"> جميع الفئات</span>
+        </div>
+        <ul class="menu">
+            <li class="menu-electronics">
+                <a href="#">الإلكترونيات</a>
+                <div class="electronics item">
+                    <div class="row" style="margin: 0">
+                        <div class="col-lg-2 categories">
+                            <p>الفئات</p>
+                            <ul>
+                                <li>
+                                    <a href="#">تلفزيونات</a>
+                                </li>
+                                <li>
+                                    <a href="#">أجهزة الكمبيوتر المحمولة</a>
+                                </li>
+                                <li>
+                                    <a href="#">كاميرات</a>
+                                </li>
+                                <li>
+                                    <a href="#">أجهزة الصوت</a>
+                                </li>
+                                <li>
+                                    <a href="#">مستلزمات الكمبيوتر</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 best-trend mob-none">
+                            <p>أفضل الماركات</p>
+                            <div>
+                                <a href="#">
+                                    <img src="image/samsung-logo.png" draggable="false" alt="سامسونج">
+                                </a>
+                                <a href="#">
+                                    <img src="image/lg.png" draggable="false" alt="ال جي">
+                                </a>
+                                <a href="#">
+                                    <img src="image/ata.png" draggable="false" alt="أى تى أى"></a>
+                                <a href="#">
+                                    <img src="image/dell.png" draggable="false" alt="ديل">
+                                </a>
+                                <a href="#">
+                                    <img src="image/lenovo.png" draggable="false" alt="لينوفو">
+                                </a>
+                                <a href="#">
+                                    <img src="image/hp.png" draggable="false" alt="اتش بي">
+                                </a>
+                                <a href="#">
+                                    <img src="image/apple.png" draggable="false" alt="أبل">
+                                </a>
+                                <a href="#">
+                                    <img src="image/kingstone.png" draggable="false" alt="كينج استون">
+                                </a>
+                                <a href="#">
+                                    <img src="image/sony.png" draggable="false" alt="سونى">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mob-none banners">
+                            <img src="image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
+                            <img src="image/top-electronics_02.png" draggable="false" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-mobiles">
+                <a href="#">موبيلات</a>
+                <div class="mobiles item">
+                    <div class="row" style="margin: 0">
+                        <div class="col-lg-2 categories">
+                            <p>الفئات</p>
+                            <ul>
+                                <li>
+                                    <a href="#">موبيلات مميزة</a>
+                                </li>
+                                <li>
+                                    <a href="#">أجهزة تابلت</a>
+                                </li>
+                                <li>
+                                    <a href="#">موبيلات بسعر مناسب</a>
+                                </li>
+                                <li>
+                                    <a href="#">ساعات ذكيه</a>
+                                </li>
+                                <li>
+                                    <a href="#">إكسسوارات الموبايل</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 mob-none best-trend">
+                            <p>أفضل الماركات</p>
+                            <div>
+                                <a href="#">
+                                    <img src="image/samsung-logo.png" draggable="false" alt="سامسونج">
+                                </a>
+                                <a href="#">
+                                    <img src="image/apple.png" draggable="false" alt="أبل">
+                                </a>
+                                <a href="#">
+                                    <img src="image/kingstone.png" draggable="false" alt="كينج استون">
+                                </a>
+                                <a href="#">
+                                    <img src="image/sony.png" draggable="false" alt="سونى">
+                                </a>
+                                <a href="#">
+                                    <img src="image/lg.png" draggable="false" alt="ال جي">
+                                </a>
+                                <a href="#">
+                                    <img src="image/ata.png" draggable="false" alt="أى تى أى"></a>
+                                <a href="#">
+                                    <img src="image/dell.png" draggable="false" alt="ديل">
+                                </a>
+                                <a href="#">
+                                    <img src="image/lenovo.png" draggable="false" alt="لينوفو">
+                                </a>
+                                <a href="#">
+                                    <img src="image/hp.png" draggable="false" alt="اتش بي">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mob-none banners">
+                            <img src="image/top-electronics_02.png" draggable="false" alt="">
+                            <img src="image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-clothes">
+                <a href="#">الأزياء</a>
+                <div class="clothes item">
+                    <div class="row" style="margin: 0">
+                        <div class="col-lg-2 categories">
+                            <p>الفئات</p>
+                            <ul>
+                                <li>
+                                    <a href="#">تلفزيونات</a>
+                                </li>
+                                <li>
+                                    <a href="#">أجهزة الكمبيوتر المحمولة</a>
+                                </li>
+                                <li>
+                                    <a href="#">كاميرات</a>
+                                </li>
+                                <li>
+                                    <a href="#">أجهزة الصوت</a>
+                                </li>
+                                <li>
+                                    <a href="#">مستلزمات الكمبيوتر</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 best-trend mob-none">
+                            <p>أفضل الماركات</p>
+                            <div>
+                                <a href="#">
+                                    <img src="image/samsung-logo.png" draggable="false" alt="سامسونج">
+                                </a>
+                                <a href="#">
+                                    <img src="image/lg.png" draggable="false" alt="ال جي">
+                                </a>
+                                <a href="#">
+                                    <img src="image/ata.png" draggable="false" alt="أى تى أى"></a>
+                                <a href="#">
+                                    <img src="image/dell.png" draggable="false" alt="ديل">
+                                </a>
+                                <a href="#">
+                                    <img src="image/lenovo.png" draggable="false" alt="لينوفو">
+                                </a>
+                                <a href="#">
+                                    <img src="image/hp.png" draggable="false" alt="اتش بي">
+                                </a>
+                                <a href="#">
+                                    <img src="image/apple.png" draggable="false" alt="أبل">
+                                </a>
+                                <a href="#">
+                                    <img src="image/kingstone.png" draggable="false" alt="كينج استون">
+                                </a>
+                                <a href="#">
+                                    <img src="image/sony.png" draggable="false" alt="سونى">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 banners mob-none">
+                            <img src="image/top-electronics_01.png.fdmdownload" draggable="false" alt="">
+                            <img src="image/top-electronics_02.png" draggable="false" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="offers">
+                <a href="#">العروض</a>
+            </li>
+        </ul>
+    </div>
     <div class="banners">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -277,7 +277,7 @@
                 <a href="#" class="shopping-now">تسوق الآن</a>
             </div>
             <div class="row pb-4 pt-2">
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="pages/product.html">
                         <div class="product">
                             <div class="product-image">
@@ -310,7 +310,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="pages/product.html">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -344,7 +344,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="pages/product.html">
                         <div class="product">
                             <div class="product-image">
@@ -377,7 +377,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="pages/product.html">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -411,7 +411,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="pages/product.html">
                         <div class="product">
                             <div class="product-image">
@@ -444,7 +444,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="pages/product.html">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -485,19 +485,19 @@
     <div class="bannerModule mb-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 width-50">
                     <a href="#"><img src="image/ar_block-05.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 width-50">
                     <a href="#"><img src="image/ar_block-06.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 width-50">
                     <a href="#"><img src="image/ar_block-07.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 width-50">
                     <a href="#"><img src="image/ar_block-03.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 width-50">
                     <a href="#"> <img src="image/ar_block-04.png" draggable="false" alt="بانر"></a>
                 </div>
             </div>
@@ -511,7 +511,7 @@
                 <a href="#" class="shopping-now">تسوق الآن</a>
             </div>
             <div class="row pb-4 pt-2">
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <div class="product-image">
@@ -543,7 +543,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -577,7 +577,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <div class="product-image">
@@ -609,7 +609,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -643,7 +643,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <div class="product-image">
@@ -676,7 +676,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -717,19 +717,19 @@
     <div class="bannerModule mb-4" data-aos="zoom-in">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 width-50">
                     <a href="#"><img src="image/ar_block-08.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 width-50">
                     <a href="#"><img src="image/ar_block-09.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 width-50">
                     <a href="#"><img src="image/ar_block-10.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 width-50">
                     <a href="#"><img src="image/ar_block-11.png" draggable="false" alt="بانر"></a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 width-50">
                     <a href="#"> <img src="image/ar_block-12.png" draggable="false" alt="بانر"></a>
                 </div>
             </div>
@@ -743,7 +743,7 @@
                 <a href="#" class="shopping-now">تسوق الآن</a>
             </div>
             <div class="row pb-4 pt-2">
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <div class="product-image">
@@ -775,7 +775,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -809,7 +809,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <div class="product-image">
@@ -842,7 +842,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <div class="product-image">
@@ -874,7 +874,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <p class="coupon">كوبون YELLOW500 - خصم 500 جنيه</p>
@@ -908,7 +908,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 item-offer">
+                <div class="col-lg-2 col-mob-6 item-offer">
                     <a href="#">
                         <div class="product">
                             <div class="product-image">
@@ -945,8 +945,8 @@
         </div>
     </div>
 
-    <div class="mt-4">
-        <a href="#"><img src="image/banner/ar_strip-01.gif" alt="توصيل" width="100%" ></a>
+    <div class="mt-4 ">
+        <a href="#"><img src="image/banner/ar_strip-01.gif" alt="توصيل" class="h-85" width="100%" ></a>
     </div>
 
     <div class="download">

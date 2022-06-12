@@ -13,22 +13,31 @@ body {
   direction: rtl;
   font-family: "Cairo", sans-serif;
   background-color: #f7f7fa;
+  overflow-x: hidden;
 }
+
 /* ------------------------- Index ------------------------- */
-/* --------------- {{ Header }} --------------- */
+/* -------------------------------------- {{ Header }} ----------------------------------------- */
 header {
   .nav {
     background-color: $mainColor;
     padding: 10px 25px;
+    @media (max-width: 400px){
+      padding: 10px;
+    }
     .row {
       width: 100%;
-      .logo {
-        img {
-          width: 100%;
+      margin: auto;
+      @media (max-width: 400px){
+        justify-content: space-between;
+      }
+      .logo-noon{
+        @media (max-width: 400px){
+          width: fit-content;
         }
       }
       .search-input {
-        margin: auto 0;
+        margin: auto 0; 
         input {
           width: 90%;
           margin-right: 5%;
@@ -37,14 +46,32 @@ header {
           padding: 5px 10px;
           font-size: 0.9rem;
           font-weight: 300;
+          @media (max-width: 400px){
+            margin: 0;
+            width: 100%;
+            margin-top: 5px;
+            padding: 7px 10px;
+          }
         }
       }
-      .login,
+      .icons{
+        @media (max-width: 400px) {
+          width: fit-content;
+          position: absolute;
+          left: 0;
+          top: 15px;
+        }
+        .login,
       .shopping-cart {
         height: fit-content;
+       
         svg {
           height: 20px;
           width: 20px;
+          @media (max-width: 400px) {  
+            width: 30px;
+            height: 30px;
+          }
         }
         &:hover {
           opacity: 0.8;
@@ -62,8 +89,13 @@ header {
         margin: auto 0;
         img {
           transform: rotateY(180deg);
+          @media (max-width: 400px) {  
+            width: 35px;
+            height: 35px;
+          }
         }
         .number {
+          display: block;
           background-color: $secondaryColor;
           border-radius: 25px;
           color: white;
@@ -85,123 +117,146 @@ header {
         font-weight: bold;
         opacity: 0.8;
       }
-    }
-  }
-  .sec-nav {
-    position: relative;
-    display: flex;
-    font-size: 0.885rem;
-    font-weight: 500;
-    background: rgb(252, 251, 244);
-    border-bottom: 1px solid $borderColor;
-    .all-categories {
-      height: fit-content;
-      cursor: pointer;
-      color: $secondaryColor;
-      width: 216px;
-      font-weight: 600;
-      text-transform: uppercase;
-      padding: 10px 25px;
-      position: relative;
-      border-left: 1px solid $borderColor;
-    }
-    .menu {
-      list-style: none;
-      display: flex;
-      padding: 0;
-      margin: 0;
-      li {
-        a {
-          padding: 10px 15px;
-          text-decoration: none;
-          display: inline-block;
-          color: #444;
-          font-weight: 600;
-        }
-        .item {
-          position: absolute;
-          top: 40px;
-          left: 0;
-          overflow: hidden;
+      .login span,
+      .shopping-cart span{
+        @media (max-width: 400px) {  
           display: none;
-          opacity: 0;
-          visibility: hidden;
-          z-index: 1000;
-          background-color: #f7f7fa;
-          border-bottom: 2px solid $borderColor;
-          .categories {
-            margin-top: 1.5rem;
-            padding-right: 1.5rem;
-            p {
-              font-size: 0.9rem;
-              font-weight: 600;
-              color: #000000;
-            }
-            ul {
-              list-style: none;
-              padding: 0;
-              li {
-                a {
-                  padding-right: 0;
-                  width: 100%;
-                  color: #777777;
-                }
-                &:hover {
-                  a {
-                    color: $secondaryColor;
-                  }
-                }
-              }
-            }
-          }
-          .best-trend {
-            margin-top: 1.5rem;
-            padding-right: 1.5rem;
-            p {
-              font-size: 0.9rem;
-              font-weight: 600;
-              color: #000000;
-            }
-            & > div {
-              a {
-                width: 32%;
-                img {
-                  width: 100%;
-                  &:hover {
-                    box-shadow: 0 0 10px $borderColor;
-                  }
-                }
-              }
-            }
-          }
-          .banners {
-            padding-right: 1.5rem;
-            padding-top: 1.5rem;
-            img {
-              height: 90%;
-              padding-left: 20px;
-            }
-          }
-        }
-        &:hover .item {
-          display: block;
-          opacity: 1;
-          visibility: visible;
-          transition: opacity 0.4s ease-in;
         }
       }
-      .offers {
-        a {
-          color: $secondaryColor;
+      }
+      
+    }
+  }
+  
+  
+}
+/* -------- Navbar ----------------------*/
+.sec-nav {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  font-size: 0.885rem;
+  font-weight: 500;
+  background: rgb(252, 251, 244);
+  border-bottom: 1px solid $borderColor;
+  .all-categories {
+    height: fit-content;
+    cursor: pointer;
+    color: $secondaryColor;
+    width: 216px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    position: relative;
+    border-left: 1px solid $borderColor;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        padding: 10px 15px;
+        text-decoration: none;
+        display: inline-block;
+        color: #444;
+        font-weight: 600;
+      }
+      .item {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        overflow: hidden;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        background-color: #f7f7fa;
+        border-bottom: 2px solid $borderColor;
+        @media (max-width: 400px) {
+          top: 42px;
+          right: 0;
         }
+        .categories {
+          margin-top: 1.5rem;
+          padding-right: 1.5rem;
+          p {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #000000;
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              a {
+                padding-right: 0;
+                width: 100%;
+                color: #777777;
+              }
+              &:hover {
+                a {
+                  color: $secondaryColor;
+                }
+              }
+            }
+          }
+        }
+        .best-trend {
+          margin-top: 1.5rem;
+          padding-right: 1.5rem;
+          p {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #000000;
+          }
+          & > div {
+            a {
+              width: 32%;
+              img {
+                width: 100%;
+                &:hover {
+                  box-shadow: 0 0 10px $borderColor;
+                }
+              }
+            }
+          }
+        }
+        .banners {
+          display: flex;
+          padding-right: 1.5rem;
+          padding-top: 1.5rem;
+
+          img {
+            height: 90%;
+            padding-left: 20px;
+          }
+        }
+      }
+      &:hover .item {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.4s ease-in;
+      }
+    }
+    .offers {
+      a {
+        color: $secondaryColor;
       }
     }
   }
 }
+
 /* --------------- {{ Banner }} --------------- */
 .banners {
   .carousel-item {
     height: 316.5px;
+    @media (max-width: 400px) {
+      height: 150px;
+    }
   }
   .carousel-control-next,
   .carousel-control-prev {
@@ -341,34 +396,59 @@ header {
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #404553;
+    @media (max-width: 400px) {
+      margin-bottom: .8rem;
+    }
   }
   img {
     width: 15rem;
+    @media (max-width: 400px) {
+      width: 8rem;
+    }
   }
 }
 /* --------------- {{ Footer }} --------------- */
 footer {
   border-top: 1px solid $borderColor;
   padding: 1rem 25px;
+  @media (max-width: 400px){
+    padding: .75rem 15px;
+  }
   .footer-one {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $borderColor;
+    @media (max-width: 400px){
+      display: block;
+    }
     .right {
       .abc {
         font-size: 1.2rem;
         font-weight: 700;
         margin: 0;
         color: rgb(64, 69, 83);
+        @media (max-width: 400px){
+          font-size: .9rem;
+        }
       }
       .xyz {
         color: $textColor;
         margin-top: 4px;
         font-size: 0.85rem;
+        @media (max-width: 400px){
+          font-size: .75rem;
+        }
       }
     }
+    
     .left {
       display: flex;
+      @media (max-width: 400px){
+        flex-flow: wrap-reverse;
+        gap: 15px;
+        margin-bottom: 15px;
+
+      }
       .alert,
       .email,
       .d3m {
@@ -382,6 +462,9 @@ footer {
           text-transform: uppercase;
           white-space: nowrap;
           color: $textColor;
+          @media (max-width: 400px){
+            font-size: 0.7rem;
+          }
         }
         p {
           font-weight: 600;
@@ -390,6 +473,9 @@ footer {
           line-height: 1.4;
           white-space: nowrap;
           margin: 0;
+          @media (max-width: 400px){
+            font-size: .95rem;
+          }
         }
       }
       .alert-icon,
@@ -408,6 +494,10 @@ footer {
           height: 100%;
           margin: auto;
         }
+        @media (max-width: 400px){
+          width: 25px;
+          height: 25px;
+        }
       }
       a {
         text-decoration: none;
@@ -423,6 +513,9 @@ footer {
     margin: 1rem 0 0 0;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 400px) {
+      flex-direction: column-reverse;
+    }
     .right {
       display: flex;
       p {
@@ -433,6 +526,16 @@ footer {
           color: $secondaryColor;
           text-decoration: none;
         }
+        @media (max-width: 400px) {
+          font-size: 12px;
+          margin: 0;
+
+        }
+      }
+      @media (max-width: 400px) {
+        margin-top: 15px;
+        display: block;
+        text-align: center;
       }
     }
     .left {
@@ -446,9 +549,15 @@ footer {
           a {
             text-decoration: none;
             color: #444;
+            @media (max-width: 400px){
+              font-size: 12px;
+            }
           }
           &:last-child {
             margin-left: 0;
+          }
+          @media (max-width: 400px){
+            margin: auto;
           }
         }
       }
@@ -516,10 +625,21 @@ footer {
       display: flex;
       background-color: white;
       padding: 20px 15px;
+      @media (max-width: 400px) {
+        flex-direction: column;
+        position: relative;
+      }
       .product-img {
         width: 40%;
         img {
           width: 80%;
+        }
+        @media (max-width: 400px) {
+        width: 100%;
+        text-align: center;
+        img {
+          width: 60%;
+        }
         }
       }
       .product-details {
@@ -546,14 +666,28 @@ footer {
           background: none;
           border: none;
           font-size: 0.8rem;
+          @media (max-width: 400px){
+            position: absolute;
+            bottom: 0;
+            padding: 5px 0;
+            margin-bottom: 6px;
+          }
         }
       }
       .salary {
         position: relative;
+        @media (max-width: 400px) {
+          display: flex;
+          justify-content: space-between;
+          margin: 15px 0;
+        }
         p {
           display: flex;
           font-size: 1.2rem;
           font-weight: 700;
+          @media (max-width: 400px) {
+            margin: 0;
+          }
           small {
             font-size: 0.7rem;
             font-weight: 100;
@@ -566,6 +700,10 @@ footer {
           display: flex;
           justify-content: space-around;
           width: 100%;
+          @media (max-width: 400px) {
+            position: relative;
+            width: auto;
+          }
           .increase,
           .decrease {
             background-color: white;
@@ -581,6 +719,9 @@ footer {
             margin: auto;
             font-size: 1.05rem;
             font-weight: 600;
+            @media (max-width: 400px){
+              margin: 0 15px ;
+            }
           }
         }
       }
@@ -718,11 +859,19 @@ footer {
   padding: 1rem;
   .carousel {
     display: flex;
+    @media (max-width: 400px) {
+      flex-direction: column-reverse;
+    }
     .carousel-indicators {
       margin: 0;
       position: initial;
       flex-direction: column;
       width: fit-content;
+      @media (max-width: 400px) {
+        flex-direction: row;
+        gap: 15px;
+        margin: auto;
+      }
       button {
         text-indent: 0;
         margin: 5px 0;
@@ -733,6 +882,9 @@ footer {
         opacity: 1;
         img {
           width: 100%;
+        }
+        @media (max-width: 400px) {
+          width: 3rem;
         }
       }
       .active {
@@ -909,6 +1061,9 @@ footer {
   }
   .tab-content {
     padding: 1.5rem 1rem 1rem 0;
+    @media (max-width: 400px) {
+      padding: 1rem 0;
+    }
     .general-look {
       h6 {
         font-size: 1.2rem;
@@ -917,9 +1072,17 @@ footer {
       }
       ul {
         list-style-position: inside;
+        @media (max-width: 400px) {
+          padding: 0;
+          }
       }
     }
     .mwasfat {
+      @media (max-width: 400px) {
+        .d-flex{
+          flex-direction: column;
+        }
+        }
       h6 {
         font-size: 1.2rem;
         font-weight: 600;
@@ -929,6 +1092,11 @@ footer {
       .left {
         width: 45%;
         margin-left: 5%;
+        @media (max-width: 400px) {
+          width: 100%;
+          margin: 0;
+        }
+        
         table {
           width: 100%;
           td {
@@ -1007,8 +1175,9 @@ footer {
 
 .alert-modal{
   width: 100%;
+  z-index: 99;
     height: 100vh;
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0,0,0,.35);
     position: fixed;
     top: 0;
     .modal-body{
@@ -1035,6 +1204,10 @@ footer {
         padding: 15px 40px;
         border-radius: 15px;
       }
+      @media (max-width: 400px) {
+        width: 90%;
+        
+      }
     }
 }
 
@@ -1047,19 +1220,34 @@ footer {
     padding: 3rem;
     margin: 3rem auto 0;
     text-align: center;
+    @media (max-width: 400px){
+      width: auto;
+      padding: .5rem;
+      margin-top: 1.5rem;
+    }
     img{
       background-color: $mainColor;
       margin: .5rem 0;
       border-radius: 10px;
+      @media (max-width: 400px){
+        margin-bottom: 5px;
+      }
     }
     h2{
       margin: 1rem 0 2rem;
+      @media (max-width: 400px){
+        margin: .5rem 0 0;
+      }
     }
     form{
       display: flex;
       flex-direction: column;
       width:350px;
       margin: auto;
+      @media (max-width: 400px){
+        width: auto;
+        padding: 10px;
+      }
       label{
         text-align: right;
         margin-bottom: 5px;
@@ -1068,6 +1256,9 @@ footer {
         padding: 5px 10px;
         border: 1px solid #888;
         margin-bottom: 15px;
+        @media (max-width: 400px){
+          border-radius: 10px;;
+        }
       }
       a{
         text-align: start;
@@ -1081,21 +1272,52 @@ footer {
         color: #000000;
         border: none;
         padding: 10px;
-  
+        @media (max-width: 400px){
+          border-radius: 8px;
+          margin-bottom: 5px;
+        }
       }
     }
     .hr{
           width: 85%;
           height: 2px;
-          background-color: #40455330;
+          background-color: #5d627230;
           border-radius: 15px;
           margin: 1rem auto;
     }
     .loginGoogle{
       background: none;
-      border: 1px soli #777;
+      border: 1px soli $textColor;
       border-radius: 15px;
       padding: 15px;
+      @media (max-width: 400px){
+        margin-bottom: 15px;
+      }
     }
+  }
+}
+
+/* ------------------------------------- */
+.col-mob-6{
+  @media (max-width: 400px) {
+    width: 45%;
+    margin: auto; 
+  }
+}
+.width-50{
+  @media (max-width: 400px) {
+    width: 50%;
+    padding: 0 5px;
+    margin: auto; 
+  }
+}
+.mob-none{
+  @media (max-width: 400px) {
+    display: none; 
+  }
+}
+.h-85{
+  @media (max-width: 400px) {
+    height: 85px; 
   }
 }
