@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/scss.css" />
-    <title>تفاصيل المنتج</title>
+    <title> تسجيل الدخول</title>
 </head>
 <body>
     <header>
@@ -26,6 +26,9 @@
                     <input type="text" width="100%" placeholder="عن ماذا تبحث ؟">
                 </div>
                 <div class="col-md-3 col-sm-3 icons d-flex justify-content-center">
+                    <button id="dark-mode" class="dark-mode-btn">
+                        <img src="../image/dark-mode.webp" alt="dark mode" />
+                    </button>
                     <div class="login">
                         <a href="login.html">
                             <span>تسجيل الدخول</span>
@@ -237,7 +240,7 @@
                 </div>
             </li>
             <li class="offers">
-                <a href="#">العروض</a>
+                <a href="./error.html">العروض</a>
             </li>
         </ul>
     </div>
@@ -265,13 +268,88 @@
         </div>
     </div>
 
+    <footer class="mt-5">
+        <div class="footer-one">
+            <div class="right">
+                <p class="abc">نحن دائماً جاهزون لمساعدتك</p>
+                <p class="xyz">تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
+            </div>
+            <div class="left">
+                <a href="#">
+                    <div class="alert">
+                        <div class="alert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                            </svg>
+                        </div>
+                        <div class="alert-text">
+                            <span>مركز المساعدة</span>
+                            <p>help.noon.com</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="email">
+                        <div class="email-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                            </svg>
+                        </div>
+                        <div class="email-text">
+                            <span>الدعم عبر البريد الإلكتروني</span>
+                            <p>egypt@noon.com</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="d3m">
+                        <div class="d3m-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                        </div>
+                        <div class="d3m-text">
+                            <span>الدعم عبر الهاتف</span>
+                            <p>16358</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyRight">
+            <div class="right">
+                <p>&copy; جميع الحقوق محفوظه لدى شركه نون .</p>
+                <p>تصميم بواسطه <a href="#" class="developer">محمد أسامة</a></p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li>
+                        <a href="#">سياسه الضمان</a>
+                    </li>
+                    <li>
+                        <a href="#">شروط الإستخدام</a>
+                    </li>
+                    <li>
+                        <a href="#">شروط البيع</a>
+                    </li>
+                    <li>
+                        <a href="#">سياسه الخصوصيه</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
+    <script src="../js/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
     integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
     crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-        crossorigin="anonymous" ></script>
+        crossorigin="anonymous" >
+    </script>
+    
 </body>
 </html>
