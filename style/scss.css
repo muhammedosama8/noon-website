@@ -75,7 +75,7 @@ header .nav {
     @media (max-width: 400px) {
       header .nav .row {
         justify-content: space-between; } }
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       header .nav .row .logo-noon {
         width: fit-content; } }
     header .nav .row .search-input {
@@ -94,7 +94,7 @@ header .nav {
             width: 100%;
             margin-top: 5px;
             padding: 7px 10px; } }
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       header .nav .row .icons {
         width: fit-content;
         position: absolute;
@@ -108,7 +108,7 @@ header .nav {
         color: #111111;
         height: 20px;
         width: 20px; }
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           header .nav .row .icons .login svg,
           header .nav .row .icons .shopping-cart svg {
             width: 30px;
@@ -126,7 +126,7 @@ header .nav {
       margin: auto 0; }
       header .nav .row .icons .shopping-cart img {
         transform: rotateY(180deg); }
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           header .nav .row .icons .shopping-cart img {
             width: 35px;
             height: 35px; } }
@@ -152,7 +152,7 @@ header .nav {
     header .nav .row .icons .login span,
     header .nav .row .icons .shopping-cart span {
       color: #111111; }
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         header .nav .row .icons .login span,
         header .nav .row .icons .shopping-cart span {
           display: none; } }
@@ -201,7 +201,7 @@ header .nav {
       z-index: 1000;
       background-color: var(--secondary-bg-color);
       border-bottom: 2px solid #e2e5f1; }
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         .sec-nav .menu li .item {
           top: 42px;
           right: 0; } }
@@ -223,6 +223,9 @@ header .nav {
       .sec-nav .menu li .item .best-trend {
         margin-top: 1.5rem;
         padding-right: 1.5rem; }
+        @media (max-width: 768px) {
+          .sec-nav .menu li .item .best-trend {
+            display: none; } }
         .sec-nav .menu li .item .best-trend p {
           font-size: 0.9rem;
           font-weight: 600;
@@ -237,7 +240,7 @@ header .nav {
         display: flex;
         padding-right: 1.5rem;
         padding-top: 1.5rem; }
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           .sec-nav .menu li .item .banners {
             display: none; } }
         .sec-nav .menu li .item .banners img {
@@ -407,14 +410,14 @@ footer {
   background-color: var(--main-bg-color);
   border-top: 1px solid #e2e5f1;
   padding: 1rem 25px; }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     footer {
       padding: .75rem 15px; } }
   footer .footer-one {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e2e5f1; }
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       footer .footer-one {
         display: block; } }
     footer .footer-one .right .abc {
@@ -422,19 +425,19 @@ footer {
       font-weight: 700;
       margin: 0;
       color: var(--text-color); }
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         footer .footer-one .right .abc {
           font-size: .9rem; } }
     footer .footer-one .right .xyz {
       color: var(--text-color);
       margin-top: 4px;
       font-size: 0.85rem; }
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         footer .footer-one .right .xyz {
           font-size: .75rem; } }
     footer .footer-one .left {
       display: flex; }
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         footer .footer-one .left {
           flex-flow: wrap-reverse;
           gap: 15px;
@@ -454,7 +457,7 @@ footer {
           text-transform: uppercase;
           white-space: nowrap;
           color: var(--text-color); }
-          @media (max-width: 400px) {
+          @media (max-width: 768px) {
             footer .footer-one .left .alert span,
             footer .footer-one .left .email span,
             footer .footer-one .left .d3m span {
@@ -468,7 +471,7 @@ footer {
           line-height: 1.4;
           white-space: nowrap;
           margin: 0; }
-          @media (max-width: 400px) {
+          @media (max-width: 768px) {
             footer .footer-one .left .alert p,
             footer .footer-one .left .email p,
             footer .footer-one .left .d3m p {
@@ -490,7 +493,7 @@ footer {
           align-items: center;
           height: 100%;
           margin: auto; }
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           footer .footer-one .left .alert-icon,
           footer .footer-one .left .email-icon,
           footer .footer-one .left .d3m-icon {
@@ -506,7 +509,7 @@ footer {
     margin: 1rem 0 0 0;
     display: flex;
     justify-content: space-between; }
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       footer .copyRight {
         flex-direction: column-reverse; } }
     footer .copyRight .right {
@@ -518,11 +521,11 @@ footer {
         footer .copyRight .right p .developer {
           color: var(--blue-color);
           text-decoration: none; }
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           footer .copyRight .right p {
             font-size: 12px;
             margin: 0; } }
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         footer .copyRight .right {
           margin-top: 15px;
           display: block;
@@ -536,12 +539,12 @@ footer {
         margin-left: 20px; }
         footer .copyRight .left ul li a {
           text-decoration: none; }
-          @media (max-width: 400px) {
+          @media (max-width: 768px) {
             footer .copyRight .left ul li a {
               font-size: 12px; } }
         footer .copyRight .left ul li:last-child {
           margin-left: 0; }
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           footer .copyRight .left ul li {
             margin: auto; } }
   footer .social-icons {
@@ -782,19 +785,26 @@ footer {
   padding: 1rem; }
   .information .carousel {
     display: flex; }
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       .information .carousel {
         flex-direction: column-reverse; } }
+    @media (max-width: 400px) {
+      .information .carousel {
+        flex-direction: row; } }
     .information .carousel .carousel-indicators {
       margin: 0;
       position: initial;
       flex-direction: column;
       width: fit-content; }
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         .information .carousel .carousel-indicators {
           flex-direction: row;
           gap: 15px;
           margin: auto; } }
+      @media (max-width: 400px) {
+        .information .carousel .carousel-indicators {
+          flex-direction: column;
+          gap: 0; } }
       .information .carousel .carousel-indicators button {
         text-indent: 0;
         margin: 5px 0;
@@ -803,19 +813,32 @@ footer {
         height: auto;
         border: none;
         opacity: 1; }
+        @media (max-width: 768px) {
+          .information .carousel .carousel-indicators button {
+            width: 3.5rem; } }
         .information .carousel .carousel-indicators button img {
           width: 100%; }
         @media (max-width: 400px) {
           .information .carousel .carousel-indicators button {
-            width: 3rem; } }
+            width: 2.5rem; } }
       .information .carousel .carousel-indicators .active {
         outline: 2px solid var(--blue-color); }
     .information .carousel .carousel-inner {
       margin-left: 0;
       margin-right: 1.5rem;
       width: 71.5%; }
+      @media (max-width: 768px) {
+        .information .carousel .carousel-inner {
+          margin: auto;
+          width: 95%; } }
+      @media (max-width: 400px) {
+        .information .carousel .carousel-inner {
+          width: 65%; } }
   .information .details {
     border-left: 1px solid #e2e5f1; }
+    @media (max-width: 768px) {
+      .information .details {
+        border: none; } }
     .information .details .brand {
       color: var(--text-color);
       margin-bottom: 0.8rem; }
@@ -911,7 +934,7 @@ footer {
         transform: scale(1);
         transition: all .4s;
         top: 26%;
-        right: 22%; }
+        right: 24%; }
       .information .details .color #radio-1 + label {
         background: #4285F4; }
       .information .details .color #radio-2 + label {
@@ -929,11 +952,25 @@ footer {
       color: white;
       font-size: 1.2rem;
       font-weight: 600; }
+  @media (max-width: 768px) {
+    .information .non-important {
+      display: grid;
+      grid-template-columns: auto auto;
+      border-top: 1px solid var(--shadow-color);
+      margin-top: 1.5rem; } }
+  @media (max-width: 400px) {
+    .information .non-important {
+      grid-template-columns: auto; } }
   .information .non-important .free_returns,
   .information .non-important .warranty,
   .information .non-important .seller {
     border-bottom: 1px solid #e2e5f1;
     padding: 1.2rem 0; }
+    @media (max-width: 768px) {
+      .information .non-important .free_returns,
+      .information .non-important .warranty,
+      .information .non-important .seller {
+        border: none; } }
     .information .non-important .free_returns img,
     .information .non-important .warranty img,
     .information .non-important .seller img {
@@ -1069,6 +1106,7 @@ footer {
         .more-information .tab-content .rating .left .star-4 .rate-progress {
           width: 3rem; }
 
+/* ---------------------------- Modal ------------------------------------ */
 .alert-modal {
   width: 100%;
   z-index: 99;
@@ -1097,6 +1135,9 @@ footer {
       margin: 20px 0;
       padding: 15px 40px;
       border-radius: 15px; }
+    @media (max-width: 768px) {
+      .alert-modal .modal-body {
+        width: 50%; } }
     @media (max-width: 400px) {
       .alert-modal .modal-body {
         width: 90%; } }
@@ -1182,7 +1223,7 @@ footer {
     width: 45%;
     margin: auto; } }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .width-50 {
     width: 50%;
     padding: 0 5px;
@@ -1195,5 +1236,9 @@ footer {
 @media (max-width: 400px) {
   .h-85 {
     height: 85px; } }
+
+@media (min-width: 400px) and (max-width: 768px) {
+  .container {
+    max-width: 90%; } }
 
 /*# sourceMappingURL=scss.css.map */

@@ -26,6 +26,7 @@ $(document).ready(function () {
         var btnParentSb = '';
         var itemsSplit = '';
         var sampwidth = $(itemsMainDiv).width();
+        console.log(sampwidth);
         var bodyWidth = $('body').width();
         $(itemsDiv).each(function () {
             id = id + 1;
@@ -47,11 +48,14 @@ $(document).ready(function () {
                 incno = itemsSplit[1];
                 itemWidth = sampwidth / incno;
             }
+            else if (bodyWidth >= 400) {
+                incno = itemsSplit[1];
+                itemWidth = sampwidth / incno;
+            }
             else {
                 incno = itemsSplit[0];
                 itemWidth = sampwidth / incno;
             }
-            console.log(itemWidth);
             $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
             $(this).find(itemClass).each(function () {
                 $(this).outerWidth(itemWidth);
