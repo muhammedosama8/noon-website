@@ -291,68 +291,90 @@ header .nav {
         background-color: var(--blue-color);
         border-color: var(--blue-color) r;
         color: white; }
-  .best-offers .container .item-offer {
-    background-color: var(--body-bg-color); }
-    .best-offers .container .item-offer a {
-      text-decoration: none; }
-      .best-offers .container .item-offer a .product {
-        padding: 15px 10px 10px 10px;
-        position: relative; }
-        .best-offers .container .item-offer a .product .coupon {
-          position: absolute;
-          top: 10px;
-          left: 0;
-          right: 0;
-          height: 22px;
-          border: 1px solid;
-          color: var(--blue-color);
-          text-align: center;
-          padding: 0 6px;
-          text-transform: uppercase;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font-size: 0.7rem;
-          font-weight: 600;
-          margin: 0; }
-        .best-offers .container .item-offer a .product .product-image img {
-          width: 100%; }
-        .best-offers .container .item-offer a .product .product-info .product-name {
-          color: var(--text-color);
-          font-size: 0.9rem;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap; }
-        .best-offers .container .item-offer a .product .product-info .product-price {
-          font-size: 1rem;
-          font-weight: 700;
-          margin-bottom: 0;
-          color: var(--price-color);
-          font-family: cursive; }
-        .best-offers .container .item-offer a .product .product-info .old-price {
-          font-size: 0.75rem;
-          text-decoration: line-through;
-          color: var(--text-color);
-          font-weight: 600;
-          height: 15px; }
-        .best-offers .container .item-offer a .product .product-info .express {
-          display: flex;
-          justify-content: space-between; }
-          .best-offers .container .item-offer a .product .product-info .express img {
-            height: 16px;
-            margin: auto 0; }
-          .best-offers .container .item-offer a .product .product-info .express .rating span {
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #f5a523; }
-            .best-offers .container .item-offer a .product .product-info .express .rating span svg {
-              height: 12px;
-              position: relative;
-              top: -1px; }
-    .best-offers .container .item-offer:hover {
-      box-shadow: 0 0 10px var(--shadow-color);
-      background-color: var(--secondary-bg-color); }
+  .best-offers .container .MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative; }
+    .best-offers .container .MultiCarousel .MultiCarousel-inner {
+      transition: 1s ease all;
+      float: left; }
+      .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer {
+        float: left;
+        background-color: var(--body-bg-color); }
+        .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a {
+          text-decoration: none; }
+          .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product {
+            padding: 15px 10px 10px 10px;
+            position: relative; }
+            .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .coupon {
+              position: absolute;
+              top: 10px;
+              left: 0;
+              right: 0;
+              height: 22px;
+              border: 1px solid;
+              color: var(--blue-color);
+              text-align: center;
+              padding: 0 6px;
+              text-transform: uppercase;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 0.7rem;
+              font-weight: 600;
+              margin: 0; }
+            .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-image img {
+              width: 100%; }
+            .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-info .product-name {
+              color: var(--text-color);
+              font-size: 0.9rem;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap; }
+            .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-info .product-price {
+              font-size: 1rem;
+              font-weight: 700;
+              margin-bottom: 0;
+              color: var(--price-color);
+              font-family: cursive; }
+            .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-info .old-price {
+              font-size: 0.75rem;
+              text-decoration: line-through;
+              color: var(--text-color);
+              font-weight: 600;
+              height: 15px; }
+            .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-info .express {
+              display: flex;
+              justify-content: space-between; }
+              .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-info .express img {
+                height: 16px;
+                margin: auto 0; }
+              .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-info .express .rating span {
+                font-weight: 600;
+                font-size: 0.9rem;
+                color: #f5a523; }
+                .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer a .product .product-info .express .rating span svg {
+                  height: 12px;
+                  position: relative;
+                  top: -1px; }
+        .best-offers .container .MultiCarousel .MultiCarousel-inner .item-offer:hover {
+          box-shadow: 0 0 10px var(--shadow-color);
+          background-color: var(--secondary-bg-color); }
+    .best-offers .container .MultiCarousel .leftLst,
+    .best-offers .container .MultiCarousel .rightLst {
+      position: absolute;
+      border-radius: 50%;
+      top: calc(50% - 20px); }
+    .best-offers .container .MultiCarousel .leftLst {
+      left: 5px; }
+    .best-offers .container .MultiCarousel .rightLst {
+      right: 5px; }
+    .best-offers .container .MultiCarousel .leftLst.over, .best-offers .container .MultiCarousel .rightLst.over {
+      opacity: 0; }
 
+/* --------------- {{ Dark Mode }} --------------- */
 .dark-mode .best-offers .container .item-offer .product .coupon {
   background-color: var(--main-color); }
 
@@ -467,8 +489,7 @@ footer {
           display: flex;
           align-items: center;
           height: 100%;
-          margin: auto;
-          color: #fff; }
+          margin: auto; }
         @media (max-width: 400px) {
           footer .footer-one .left .alert-icon,
           footer .footer-one .left .email-icon,
