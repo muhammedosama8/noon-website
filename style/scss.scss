@@ -932,6 +932,17 @@ footer {
 .error {
   text-align: center;
   margin: 3rem 0;
+  img{
+    height: 30vh;
+    width: auto;
+    @media (max-width: 768px) {
+      height: auto;
+      width: 60%;
+    }
+    @media (max-width: 400px) {
+      width: 90%;
+    }
+  }
   h2 {
     font-weight: 600;
     margin-bottom: 1rem;
@@ -1228,12 +1239,16 @@ footer {
   padding: 1rem;
   .nav-tabs {
     border-bottom: 2px solid #dee2e6;
+    padding-bottom: 15px;
     .nav-link {
       background: none;
       font-size: 1.2rem;
       font-weight: 600;
       color: var(--text-color);
       border: none;
+      @media (max-width: 400px){
+        font-size: .86rem;
+      }
     }
     .nav-link.active {
       color: blue;
@@ -1293,6 +1308,9 @@ footer {
     }
     .rating {
       display: flex;
+      @media (max-width: 400px) {
+        flex-direction: column;
+      }
       .right {
         margin: auto 0 auto 3rem;
         text-align: center;
@@ -1351,47 +1369,7 @@ footer {
   }
 }
 
-/* ---------------------------- Modal ------------------------------------ */
-.alert-modal{
-  width: 100%;
-  z-index: 99;
-    height: 100vh;
-    background-color: rgba(0,0,0,.35);
-    position: fixed;
-    top: 0;
-    .modal-body{
-      width: 25%;
-      background-color: var(--secondary-bg-color);
-      padding: 2rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 15px;
-      text-align: center;
-      h1{
-        margin-bottom: 20px;
-      }
-      h3{
-        margin-bottom: 20px;
-      }
-      .close-modal{
-        background-color: var(--blue-color);
-        border: none;
-        color: #fff;
-        margin: 20px 0;
-        padding: 15px 40px;
-        border-radius: 15px;
-      }
-      @media (max-width: 768px) {
-        width: 50%;
-      }
-      @media (max-width: 400px) {
-        width: 90%;
-      }
-    }
-}
-
+/* ---------------------------- Login ------------------------------------ */
 .login-page{
   .login{
     background-color: var(--secondary-bg-color);

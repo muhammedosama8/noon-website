@@ -1,5 +1,4 @@
 let quantity = document.getElementById('quantity');
-let modal = document.getElementById('alert');
 let themeButton = document.getElementById('dark-mode');
 let dark = document.getElementById('dark');
 let light = document.getElementById('light');
@@ -32,8 +31,5 @@ function decrease(){
     
 }
 
-function closeModal(){
-    modal.classList.add('d-none');
-}
 
 
