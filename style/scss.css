@@ -60,7 +60,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, li {
       padding: 3px;
       border-radius: 5px;
       z-index: 9999; } }
-
+  input{
+    background-color: var(--main-bg-color);
+  }
 /* ------------------------- Index ------------------------- */
 /* -------------------------------------- {{ Header }} ----------------------------------------- */
 header .nav {
